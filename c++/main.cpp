@@ -1,10 +1,11 @@
 # include <iostream>
 using namespace std;
 int main(){
-    int count =0;
-    while (count <=5)
+    int n=5;
+    int count =1;
+    while (count <=n)
     {
-        cout<<count<<" ";
+        cout<<"* "<<endl;
         count++;
     }
     return 0;
