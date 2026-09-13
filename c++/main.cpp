@@ -2,12 +2,20 @@
 using namespace std;
 int main(){
   int n=10;
-  int sum=0;
-  for(int i=1; i<=n;i++){
-    if(i%2 ==0){
-        sum+=i;
+  bool isprime=true;
+  for(int i=2; i<=n-1;i++){
+    if(n%i==0){
+      isprime=false;
+      break;
+  
     } 
   }
-  cout<<sum<<endl;
+   if(isprime==true){
+    cout<<"prime no";
+   }
+   else{
+    cout<<"non prime";
+   }
+  
     return 0;
 }
